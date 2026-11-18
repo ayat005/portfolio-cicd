@@ -30,8 +30,8 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build Docker image
-        run: docker build -t ghcr.io/your-username/your-repo-name:latest .
+            - name: Build Docker image
+        run: docker build -t ghcr.io/ayat005/portfolio-cicd:latest .
 
       - name: Push Docker image
-        run: docker push ghcr.io/your-username/your-repo-name:latest
+        run: docker push ghcr.io/ayat005/portfolio-cicd:latest
